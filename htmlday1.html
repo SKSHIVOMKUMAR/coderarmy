@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Defense Course </title>
+  
+    <h1 align="center"> HTML Defense Course </h1>
+      <p><strong>Instructor:</strong> Rohit Negi </p>
+    <hr>
+     <ol>
+        <li><a href="welcomepage.html"><b>Welcome Page  </b></a></li>
+        <li><a href="webdevintro.html"><b> WebDev Intro </b></a></li>
+        <li><a href="htmlday1.html"><b>All about HTML</b></a></li>
+        <li><a href="htmlday2.html"><B> Nested Lists & Tables </B></a></li>
+         <li><a href="htmlday3.html"><b>Boilerplate, File Path,Div, Class,ID</b></a></li>
+          <li><a href="htmlday4.html"><B> Forms </B></a></li>
+           <li><a href="htmlday5.html"><b> Deploy Your First Website</b></a></li>
+
+      </ol>
+      <hr>
+</head>
+<body>
+    <p> <h2>👇 What You'll Learn in this course ?</h2>
+        <br>
+<h4> What is HTML? </h4>
+<p> We'll break down the definition of HyperText Markup Language and explain why it's the backbone of every website on the internet.
+<br>
+<h4> Setting Up Your Editor</h4>
+<p>A step-by-step guide on how to download and install VS Code, the most popular code editor in the world.</p>
+
+<h4> HTML Structure  </h4>
+<p> Learn to create headings (h1 to h6) and paragraphs (p) to build a logical document.</p>
+
+<h4> Organizing Content</h4>
+   <p>Master ordered and unordered lists (ol, ul) to group related items.</p>
+
+<h4> The Power of Links</h4>
+<p>Discover the anchor tag (a) and how to link to other pages.</p>
+
+<h4> Adding Visuals <h4>
+<p>Learn to embed images (img) to make your page more engaging.</p>
+
+<h4> Formatting Your Page</h4>
+<p>Understand how to use line breaks (br) and horizontal rules (hr) to control spacing and</p>
+<br>
+<h2 align="center"> Detailed Notes: </h2>
+<hr>
+
+<h1>HTML : Hyper Text Markup Language</h1><hr>
+<p> HTML stands for <B>Hyper Text Markup Lnguage</B>. It is the standard language used to create and structure the content of a webpage.</p>
+<p><b>HyperText:</b> This refers to the ability to create links that connect web pages to one another, making the web a connected "web" of information.</p>
+<p><b>Markup Language:</b>  This means you use "tags" to surround your content, giving that content meaning and structure. You are "marking up" a plain text document.</p>
+ <B> Want to see how's the world's first website look like?</B>
+ <p align="center"> <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank"><b> Click here:</b></a></p>
+<h3>
+    Install Required Software to Start:</h3>
+<b>1. Install Visual Studio Code</b>
+<br>
+<p> This is a free piece of software from Microsoft that you will use to write your code.</p>
+<p align = "center"><a href="https://code.visualstudio.com/ " target="_blank"><b>Download VS code:</b> </a></p>
+<br><br> 
+<h3 align="center">1: The Heading (h1 to h6) </h3> 
+<hr>
+<p> Headings are tags used to define titles and subtitles on your page. They are crucial for creating a logical hierarchy and outline for your content.</p>
+<p align="center"> <img src="heading.png" alt="Heading picture " height="200px"></p>
+<br> 
+<p><b>h1 : </b> The most important heading, typically used only once per page for the main title.
+<p><b>h2: </b> A major section heading.</p>
+<p><b>h3</b> A sub-section heading under an h2.
+...and so on, down to h6, the least important heading.</p>
+<p><b>The Purpose:</b> To structure your document in a way that is understandable to both humans and machines (like search engines and screen readers). It is not just for making text big; it is for giving the text structural importance.</p>
+<h3 align="center">2. The Paragraph:</h3>
+<hr> 
+<p><b>What it is:</b>The paragraph tag is the most common tag you'll use. It's for grouping sentences and blocks of text together.</p>
+<p align="center"> <img src="paragraph.png" alt="paragraph"></p>
+<h3 align="center"> 3: HTML Horizontal Rules</h3>
+<hr> 
+<p>The hr tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+<p> The hr element is used to separate content (or define a change) in an HTML page:</p>
+<p align="center"> <img src="horizontal line .png" alt="horizontal line "></p>
+<h3 align="center"> 4. The Line Break Tag:</h3>
+<hr> 
+<p> This tag tells the browser, "Stop writing on this line and immediately start on the next one." It's like hitting the Enter key once in a poem or an address.</p>
+<p><b>Purpose: </b>Creates a single line break.</p>
+
+<p align="center"> <img src="breaktag.png" alt="breaktag "></p>
+<h3 align="center">5. List Elements (ul,ol,li)</h3>
+<hr> 
+<p> <b>What it is:</b>These tags are used to create lists. This is a perfect example of nesting.</p>
+<b>The Tags: </b>
+ul: An Unordered List. It creates a bulleted list.
+ol: An ordered List. It creates a numbered list.
+li: A List Item. Each item in either type of list must be wrapped in an li tag.
+<p><b>The Purpose:</b>To group related items together in a list format.</p>
+<b>Example (Nesting in action):</B>
+<p>The li elements are nested as children inside the ul parent.</p>
+<p align="center"> <img src="list.png" alt="list "></p>
+<h3 align="center"> 6: The Anchor Tag (a)<h3> 
+    <hr> 
+<p>What it is: The Anchor tag  what makes the web "hypertext." It is used to create a hyperlink to another webpage, a file, or a location within the same page.</p>
+<p> The Purpose: To make text (or an image) clickable, allowing users to navigate. It requires attributes called href (hypertext reference) to specify the destination URL.</p>
+<p align="center"> <img src="anchor.png" alt="anchor "></p>
+<h3 align="center"> 7: HTML Links - The target Attribute</h3>
+<hr> 
+<p> By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+<p> The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:</p>
+<p> <b> _self-</b> Default. Opens the document in the same window/tab as it was clicked</p>
+<p> <b>_blank-</b> Opens the document in a new window or tab</p>
+<h3 align="center">8. The Image Tag (img)</h3>
+<hr> 
+<p><b>What it is:</b>The Image tag is a self-closing tag used to embed an image onto your page.</p>
+<b> The tag:</b>img
+
+<p><b>The Purpose:</b> To display a visual image. It requires two main attributes:</p>
+<p><B>- src(source):</B> The path or URL to the image file. This is mandatory.</p>
+<p><B>- alt(alternative text): </B>A description of the image. This is vital for accessibility (screen readers for the visually impaired will read this out) and for when the image fails to load. </p>
+<p align="center"> <img src="image.png" alt="image "></p>
+<br> 
+<h2 align="center"> Resources: </h2>
+<p align="center">  <a href ="https://www.notion.so/HTML-Hyper-Text-Markup-Language-2603a78e0e228098958fd3cbbbb540de?source=copy_link"> <b> NOTION NOTES:  </b></a></p>
+<br> 
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/GkZN_-HMCJ8?si=XwG-aMuLm1B_e_E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<P align="center"> <a href="htmlday2.html"> <b> MOVE TO NEXT PAGE -></b> </a></P>
+</p>
+  <footer>
+    <p>&copy; 2025 All rights reserved. </p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

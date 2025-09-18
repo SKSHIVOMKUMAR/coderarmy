@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deployment !  </title>
+</head>
+<body>
+  <h1 align =" center "> DEPLOYMENT </h1>
+   <p><strong>Instructor:</strong> Rohit Negi </p>
+  <hr>
+   <ol>
+        <li><a href="welcomepage.html"><b>Welcome Page  </b></a></li>
+        <li><a href="webdevintro.html"><b> WebDev Intro </b></a></li>
+        <li><a href="htmlday1.html"><b>All about HTML</b></a></li>
+        <li><a href="htmlday2.html"><B> Nested Lists & Tables </B></a></li>
+         <li><a href="htmlday3.html"><b>Boilerplate, File Path,Div, Class,ID</b></a></li>
+          <li><a href="htmlday4.html"><B> Forms </B></a></li>
+           <li><a href="htmlday5.html"><b> Deploy Your First Website</b></a></li>
+
+      </ol><hr>
+  <p><h2 align =" center "> What will you learn -</h2>
+    <ol> 
+      <li>  Embedding Audio Files</li>
+      <LI> Embedding Video Files </LI>
+      <LI> Embedding YouTube & External Videos</LI>
+      <LI>  Folder Structure for Multi-Page Website</LI>
+      <LI>  Linking Multiple Pages</LI>
+    </ol>
+  
+  <hr>
+
+  <h2  align =" center ">1. Embedding Audio Files</h2>
+  <p>
+    The audio tag adds sound/music to your webpage. <br>
+    <strong>Controls:</strong> Add <code>controls</code> for play/pause buttons. <br>
+    <strong>Tip:</strong> Use source for multiple audio formats to ensure wider browser support.
+  </p>
+  <audio controls>
+    <source src="audio-file.mp3" type="audio/mp3">
+    <source src="audio-file.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  <p align =" center "><img src="audio.png" alt=""> </a> </p>
+  <br>
+  <hr>
+
+  <h2  align =" center " >2. Embedding Video Files</h2>
+  <p>
+    The video tag shows videos directly in HTML.<br>
+    <strong>Controls:</strong> Add controls for video buttons.<br>
+    <strong>Poster:</strong> Show a placeholder image.<br>
+    <strong>Tip:</strong> Use source for multiple formats.
+  </p>
+  <video controls width="320" height="240" poster="thumbnail.jpg">
+    <source src="video-file.mp4" type="video/mp4">
+    <source src="video-file.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <p>
+    To autoplay/mute:<br>
+    <code>&lt;video controls autoplay muted&gt; ... &lt;/video&gt;</code>
+  </p>
+  <hr>
+
+  <h2>3. Embedding YouTube & External Videos</h2>
+  <p>
+    Use iframe tag for videos from YouTube or other sites.<br>
+    <strong>Allow Fullscreen:</strong> Add allowfullscreen attribute.<br>
+    Example:
+  </p>
+ 
+  </iframe>
+  <p align =" center "><iframe width="560" height="315" src="https://www.youtube.com/embed/NGYp1zCBthk?si=1xvgorBMn2RhCATY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+  <ul>
+    <li>Replace VIDEO_ID with the correct video ID from the URL.</li>
+    <li>Always check you are using the /embed format for YouTube.</li>
+  </ul>
+  <hr>
+
+  <h2 align="center " >4. Folder Structure for Multi-Page Website</h2>
+  <ol>
+    <li>Organize all HTML files (e.g. <strong>index.html</strong>, <strong>about.html</strong>, <strong>contact.html</strong>) in one project folder.</li>
+    <li>Store media files (audio, video, images) in separate folders for easy access.</li>
+    <li>Correctly link files using <strong>relative paths</strong>.</li>
+  </ol>
+  <hr>
+
+  <h2 align =" center ">5. Linking Multiple Pages</h2>
+  <p>
+    Use the a(anchor tag )tag to link pages. Example navigation:
+  </p>
+  <ul>
+ 
+    <li>Place the links in the <strong>header</strong> of every page for easy navigation.</li>
+    <li>Use <strong>relative paths</strong> (folder-name/file-name.html) for links within folders.</li>
+  </ul>
+  <p align =" center "> <img src="anchor.png" alt=""></p>
+  <hr>
+
+  <h2 align ="center ">6. Example Homepage </h2>
+  <header>
+    <h2 align =" center ">Welcome to Our HTML Defense Project Website Links </h2>
+ 
+      <ol>
+        <li><a href="welcomepage.html"><b>Welcome Page  </b></a></li>
+        <li><a href="webdevintro.html"><b> WebDev Intro </b></a></li>
+        <li><a href="htmlday1.html"><b>All about HTML</b></a></li>
+        <li><a href="htmlday2.html"><B> Nested Lists & Tables </B></a></li>
+         <li><a href="htmlday3.html"><b>Boilerplate, File Path,Div, Class,ID</b></a></li>
+          <li><a href="htmlday4.html"><B> Forms </B></a></li>
+           <li><a href="htmlday5.html"><b> Deploy Your First Website</b></a></li>
+
+      </ol>
+      <p align =" center "><img src="links.png" alt=""></p>
+  
+  </header>
+
+  <main>
+  <b> This is our HTML Media & Multi-Page Site</b>
+    <p>
+      Explore different pages to see how media tags and navigation work.
+    </p>
+  
+  <hr>
+
+
+
+  
+
+ 
+
+  <h2 align =" center ">How to Deploy Website using Netlify?</h2>
+  <ol>
+    <li>Create project folder and keep all HTML files inside it.</li>
+    <li>Sign up for a free account on <b> </b><a href="https://www.netlify.com/">netlify.com</a></li>
+    <li>Click "Add new site"  "Deploy manually".</li>
+    <li>Drag and drop your entire project folder onto Netlify deploy area.</li>
+    <li>Wait for upload; you get a LIVE project URL to share.</li>
+    <li>To update, just re-upload new files to the same project on Netlify.</li>
+    <li>Your site is automatically secured with HTTPS.</li>
+  </ol>
+
+  <hr>
+<h2 align =" center "> Resources: </h2>
+<P align =" center "> <a href="https://www.notion.so/HTML-MEDIA-2673a78e0e2280e7aaede039776da705"><b> NOTION NOTES: </b></a></P>
+<p align =" center "> <a href="https://github.com/coderarmy-notes/mern-stack-course"> <b>GITHUB REPOSITORY: </b></a></p>
+ <P align =" center "><iframe width="560" height="315" src="https://www.youtube.com/embed/NGYp1zCBthk?si=n0wizANjjKDVPjCP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </P>
+</body>
+<br> <br> 
+
+  <foOter> 
+    <h1 align =" center "> THANKYOU SO MUCH FOR VISITING ! </h1>
+  </footer>
+  <footer>
+    <p>&copy; 2025 All rights reserved. </p>
+  </footer>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HTML Defense Course</title>
+</head>
+<body>
+<h1 align ="center ">HTML Nested Lists & Tables: Complete Guide Notes</h1>
+<p><strong>Instructor:</strong> Rohit Negi </p>
+<hr> 
+ <ol>
+        <li><a href="welcomepage.html"><b>Welcome Page  </b></a></li>
+        <li><a href="webdevintro.html"><b> WebDev Intro </b></a></li>
+        <li><a href="htmlday1.html"><b>All about HTML</b></a></li>
+        <li><a href="htmlday2.html"><B> Nested Lists & Tables </B></a></li>
+         <li><a href="htmlday3.html"><b>Boilerplate, File Path,Div, Class,ID</b></a></li>
+          <li><a href="htmlday4.html"><B> Forms </B></a></li>
+           <li><a href="htmlday5.html"><b> Deploy Your First Website</b></a></li>
+
+      </ol> <hr>
+<h2 align="center ">Introduction</h2>
+<hr>
+<p>The lecture covers two essential HTML concepts for structuring content:</p>
+<ul>
+  <li>Nested Lists (Lists inside other lists)</li>
+  <li>HTML Tables and advanced table features</li>
+</ul>
+<p>Includes 5 detailed examples for nested lists and 5 detailed examples for tables with step-by-step guidance.</p>
+<h2 align ="center ">HTML Lists Recap</h2>
+<hr>
+<ul>
+  <li>ol - Ordered list (numbered).</li>
+  <li> ul - Unordered list (bulleted).</li>
+</ul>
+<p><strong>Nested lists:</strong> Lists within lists to represent hierarchical data.</p>
+<h2 align="center">Nested List Examples</h2>
+<hr> 
+<h3>Example 1: Countries with Cities</h3>
+<p>Unordered list of countries with nested unordered lists of cities:</p>
+<ul>
+  <li>India
+    <ul>
+      <li>Delhi</li>
+      <li>Mumbai</li>
+      <li>Goa</li>
+    </ul>
+  </li>
+  <li>USA
+    <ul>
+      <li>California</li>
+      <li>Texas</li>
+    </ul>
+  </li>
+  <li>England
+    <ul>
+      <li>London</li>
+      <li>Oval</li>
+      <li>Yorkshire</li>
+    </ul>
+  </li>
+</ul>
+<h3>Example 2: Nested Ordered List within Unordered List</h3>
+<p>Example with ordered list inside unordered list (e.g. Delhi's localities):</p>
+<ul>
+  <li>Delhi
+    <ol>
+      <li>Dwarka</li>
+      <li>Vikaspuri</li>
+    </ol>
+  </li>
+</ul>
+
+<h3>Example 3: Multi-level Nested Lists (Daily Meal Plan)</h3>
+<h1 align = "center">Daily Meal Plan</h1>
+<ol>
+  <li>Breakfast
+    <ul>
+      <li>Main</li>
+      <li>Side</li>
+      <li>Drink</li>
+    </ul>
+  </li>
+  <li>Lunch
+    <ul>
+      <li>Main Course</li>
+      <li>Side</li>
+      <li>Beverages</li>
+    </ul>
+  </li>
+  <li>Dinner
+    <ul>
+      <li>Appetizer</li>
+      <li>Main Course</li>
+      <li>Dessert</li>
+    </ul>
+  </li>
+</ol>
+<p>Headings can be used to maintain semantic structure with appropriate levels (H1, H2, etc.).</p>
+
+
+
+<h2 align ="center">Introduction to HTML Tables</h2>
+<hr> 
+<p>HTML tables are used to present tabular data with rows and columns:</p>
+<ul>
+ <li>table tag defines the table</li>
+ <li>tr tag defines a table row</li>
+  <li>th tag defines a table header cell (bold and semantic)</li>
+  <li>td defines a table data cell</li>
+  <li> thead, tbody, and tfoot define semantic sections of the table</li>
+</ul>
+<p>Example: Simple table structure</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>10</td>
+      <td>$1</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>5</td>
+      <td>$0.5</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>15</td>
+      <td>$1.5</td>
+    </tr>
+  </tfoot>
+</table>
+<h2 align ="center">Advanced Table Features</h2>
+<hr> 
+
+<h3 align ="center">Colspan Attribute</h3>
+<p><strong>Colspan</strong> expands a cell to span multiple columns, useful for grouping header or summary cells:</p>
+<h3 align="center">Rowspan Attribute</h3>
+<p><strong>Rowspan </strong> expands a cell to span multiple rows, useful for multi-row data grouping:</p>
+
+<h3>Example with Colspan and Rowspan</h3>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Contact Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">John Doe</td>
+      <td>1234567890</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>0987654321</td>
+      <td>john.alt@example.com</td>
+    </tr>
+  </tbody>
+</table>
+<p>This example demonstrates practical use of spanning cells vertically and horizontally.</p>
+<h2 align ="center">Tips </h2>
+<hr>
+<ul>
+  <li>Use semantic tags like thead, tbody, and tfoot for clarity & accessibility.</li>
+  <li>Use th for headers to aid screen readers and SEO.</li>
+  <li>Indent and comment code clearly for readability.</li>
+  <li>Use borders temporarily (e.g., border="1") for visible debugging of table layout.</li>
+</ul>
+
+<h2 align="center">Homework Tasks</h2>
+<hr>
+<ul>
+  <li>Create nested lists replicating the structures shown, including multi-level nesting.</li>
+  <li>Build tables with different examples (basic table, table with colspan and rowspan, tables with thead, tbody, tfoot).</li>
+  <li>Experiment with ordered and unordered nested lists.</li>
+</ul>
+
+<h2 align="center"> Resources: </h2>
+
+ <p align="center"><a href="https://www.notion.so/HTML-Hyper-Text-Markup-Language-2603a78e0e228098958fd3cbbbb540de" target="_blank"><b>NOTION NOTES: </b></a></p>
+<p align ="center "> <a href="https://github.com/coderarmy-notes/mern-stack-course"><b>  GITHUB REPOSITORY:</b></a></p>
+</ul>
+<br>
+ <p align="center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/AJ4E1zf5tQs?si=WKt2yF8BFULzeeUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+
+<p align="center"><a href="htmlday3.html"> <b> MOVE TO NEXT PAGE -></b> </a></p>
+
+</body>
+  <footer>
+    <p>&copy; 2025 All rights reserved. </p>
+  </footer>
+   
+</html>

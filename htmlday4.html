@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML DEFENSE COURSE </title>
+ 
+</head>
+<body>
+  <h1 align = "center">Forms in HTML</h1>
+    <p><strong>Instructor:</strong> Rohit Negi </p>
+    <hr>
+     <ol>
+        <li><a href="welcomepage.html"><b>Welcome Page  </b></a></li>
+        <li><a href="webdevintro.html"><b> WebDev Intro </b></a></li>
+        <li><a href="htmlday1.html"><b>All about HTML</b></a></li>
+        <li><a href="htmlday2.html"><B> Nested Lists & Tables </B></a></li>
+         <li><a href="htmlday3.html"><b>Boilerplate, File Path,Div, Class,ID</b></a></li>
+          <li><a href="htmlday4.html"><B> Forms </B></a></li>
+           <li><a href="htmlday5.html"><b> Deploy Your First Website</b></a></li>
+
+      </ol><hr>
+<p><b>The Core Problem why we require FORMS </b>
+  <br> <br> 
+  How do we create a standardized, reliable system to:
+  <ol> 
+    <li>  Display interactive fields for a user to fill in (text boxes, checkboxes, dropdowns).</li>
+    <li>  Package the user's data neatly.</li>
+    <li> Send that package to a specific destination on a server. </li>
+    <li>  Tell the server how the data is being sent.</li>
+  </ol>
+The logical solution to this entire problem is the HTML <b>FORM </b>.</p>
+  <hr>
+
+  <h2 align =" center ">What is an HTML Form?</h2>
+  <p>
+    An HTML form lets users enter information, which is sent to a server for storage or processing. Every form starts with the form tag. Inside it, you place all your input fields, dropdowns, checkboxes, radios, and buttons.
+  </p>
+  <hr>
+  <h2 align =" center ">The Building Blocks</h2>
+  <p>
+    HTML forms use several core tags and attributes. Each one is explained below -
+
+
+  <h3 align =" center ">The Need for Meaning - Label Tag</h3>
+<b>The Problem: </b> We have a box, but the user has no idea what they are supposed to type into it. Is it for a name? An email? A search query? The box is meaningless without a description.
+<br> <br> 
+<b> The Solution:</b>We need to add a descriptive piece of text. The correct HTML tag for this is the<b> Label</b>. It's a tag specifically designed to be the title for a form field.
+<p align ="center"><img src="LABEL.png" alt="label"> </p>
+
+  <h3>Name, ID, and For Attributes</h3>
+  <ul>
+    <li><strong>Name:</strong> Specifies the key by which your backend identifies each value.</li>
+    <li><strong>Id:</strong> Must be unique and lets label for connect to the input.</li>
+    <li><strong>For:</strong> Used in label to link it with input's id.</li>
+  </ul>
+  <p align ="center"><img src="for.png" alt="for "> </p>
+
+
+  <h3 align ="center">All Input Types-</h3>
+  <hr>
+  <ul>
+    <li><strong>Text:</strong> For normal text.
+      <br>
+
+    </li>
+    <li><strong>Password:</strong> Hides user input with dots or stars.
+      <br>
+
+    </li>
+    <li><strong>Email:</strong> Checks for correct email format automatically.
+      <br>
+
+    </li>
+    <li><strong>Number:</strong> Allows only numeric values. You can set min/max.
+      <br>
+ 
+    </li>
+    <li><strong>Date:</strong> Lets users choose a date from a calendar.
+      <br>
+   
+    </li>
+    <li><strong>File:</strong> For uploading photos or documents.
+      <br>
+    
+    </li>
+    <li><strong>Color:</strong> Lets user pick a color.
+      <br>
+ 
+    </li>
+    <li><strong>Range:</strong> For sliders; users pick a value in a range.
+      <br>
+     
+    </li>
+    <li><strong>Tel:</strong> For phone numbers.
+      <br>
+    
+    </li>
+  </ul>
+
+  <hr>
+  <h2 align ="center">Choosing Options</h2>
+  <h3>Radio Buttons (Single Choice)</h3>
+  <p>
+    Radios let user select <strong>one</strong> option. All radios with same <code>name</code> are grouped.
+  </p>
+  <p align ="center"> <img src="radio.png" alt="radio"></p>
+<article> We need an input type where selecting one option automatically de-selects all others. This is the radio button.</article>
+
+  <h3 align ="center">Checkboxes (Multiple Choice)</h3>
+  <p align =" center "> <img src="check.png" alt="checkbox"></p>
+  <p>
+    Checkboxes allow selecting several options at once. Each box needs its own <code>value</code>.
+  <article> We need an input type that allows for multiple selections. This is the checkbox .
+Checkboxes that are part of the same question should also share the same name. This tells the server that all the selected values belong to the same category ("toppings").</article></p>
+
+  <h3 align ="center">Dropdown Menus</h3>
+ 
+  <p align ="center"> <img src="drop.png" alt=""></p>
+<article> A dropdown menu. It compactly hides all the options until the user clicks on it. This is created with the select tag, which contains multiple option tags.</article>
+
+  <h3 align ="center">Textarea for Multi-line Text</h3>
+  <p align ="center"> <img src="text.png" alt=""></p>
+  <p>
+    For comments or address, use textarea.<article> We need a dedicated element for multi-line text input. This is the textarea tag.</article>
+  </p>
+
+
+  <hr>
+  <h2 align ="center">MINI PROJECT as Example</h2>
+ 
+
+
+
+
+  <form>
+    <h3 align =" center ">Student Registration</h3>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="username" required><br><br>
+    <label for="father">Father's Name:</label>
+    <input type="text" id="father" name="fathername"><br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="userage" min="1" max="99"><br><br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="userpassword" required><br><br>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="useremail" required><br><br>
+    <label for="usertel">Phone:</label>
+    <input type="tel" id="usertel" name="usertel" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="userdob"><br><br>
+   
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+    </fieldset><br>
+    <fieldset>
+      <legend>Subjects</legend>
+      <input type="checkbox" id="cpp" name="subjects" value="C++">
+      <label for="cpp">C++</label>
+      <input type="checkbox" id="java" name="subjects" value="Java">
+      <label for="java">Java</label>
+      <input type="checkbox" id="python" name="subjects" value="Python">
+      <label for="python">Python</label>
+      <input type="checkbox" id="js" name="subjects" value="Javascript">
+      <label for="js">Javascript</label>
+    </fieldset><br>
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="">--Select--</option>
+      <option value="meerut">Meerut</option>
+      <option value="delhi">Delhi</option>
+      <option value="noida">Noida</option>
+      <option value="other">Other</option>
+    </select><br><br>
+   
+  
+    
+    <input type="submit" value="Register">
+    <button type="button" onclick="alert('Hello, welcome to the course!')">Click Me!</button>
+  </form>
+
+  <hr>
+
+
+
+  <h2 align =" center ">Tips </h2>
+  <ul>
+    <li>Always use label for accessibility.</li>
+    <li>Choose clear, unique name for each field.</li>
+    <li>Group similar inputs with fieldset.</li>
+    <li>Use required and other validation for safe data collection.</li>
+    <li>For radio buttons, keep same name ; for checkboxes, use separate value.</li>
+  </ul>
+  <BR>  
+    <h2  align =" center "> Resources: </h2>
+<p align =" center "><a href="https://www.notion.so/Forms-in-HTML-2643a78e0e2280ddadb4c7151cfb3c5f?source=copy_link"><B>NOTION NOTES: </B></A>   </p>
+<p align =" center "><a href="https://github.com/coderarmy-notes/mern-stack-course"><B>GITHUB REPOSITORY:  </B> </a> </p>
+   <P align =" center "> <iframe width="560" height="315" src="https://www.youtube.com/embed/a4j9R_DvZ8M?si=QUtUlnpMJs4bteJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></P>
+   <p align="center"><a href="htmlday5.html"> <b> MOVE TO NEXT PAGE -></b> </a></p>
+</body>
+  <footer>
+    <p>&copy; 2025 All rights reserved. </p>
+  </footer>
+</html>
